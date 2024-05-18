@@ -1,0 +1,8 @@
+{
+  "id": "ExempleMod",
+  "name": "Your mod name",
+  "description": "A simple mod that prints 'Hello World!'",
+  "version": "1.0",
+  "author": "Tokkyo",
+  "icon": "tabler-apps"
+}

@@ -1,0 +1,396 @@
+/* mods/udx/mod.css */
+/* Fonts */
+@font-face {
+  font-family: 'ttm-thin';
+  src: url('udxmod://udx/font/ttm-thin.ttf');
+}
+@font-face {
+  font-family: 'ttm-thin-italic';
+  src: url('udxmod://udx/font/ttm-thin-italic.ttf');
+}
+@font-face {
+  font-family: 'ttm-light';
+  src: url('udxmod://udx/font/ttm-light.ttf');
+}
+@font-face {
+  font-family: 'ttm-light-italic';
+  src: url('udxmod://udx/font/ttm-light-italic.ttf');
+}
+@font-face {
+  font-family: 'ttm-regular';
+  src: url('udxmod://udx/font/ttm-regular.ttf');
+}
+@font-face {
+  font-family: 'ttm-italic';
+  src: url('udxmod://udx/font/ttm-italic.ttf');
+}
+@font-face {
+  font-family: 'ttm-medium';
+  src: url('udxmod://udx/font/ttm-medium.ttf');
+}
+@font-face {
+  font-family: 'ttm-medium-italic';
+  src: url('udxmod://udx/font/ttm-medium-italic.ttf');
+}
+@font-face {
+  font-family: 'ttm-bold';
+  src: url('udxmod://udx/font/ttm-bold.ttf');
+}
+@font-face {
+  font-family: 'ttm-bold-italic';
+  src: url('udxmod://udx/font/ttm-bold-italic.ttf');
+}
+@font-face {
+  font-family: 'ttm-black';
+  src: url('udxmod://udx/font/ttm-black.ttf');
+}
+@font-face {
+  font-family: 'ttm-black-italic';
+  src: url('udxmod://udx/font/ttm-black-italic.ttf');
+}
+@font-face {
+  font-family: 'ttm-demibold';
+  src: url('udxmod://udx/font/ttm-demibold.ttf');
+}
+@font-face {
+  font-family: 'ttm-demibold-italic';
+  src: url('udxmod://udx/font/ttm-demibold-italic.ttf');
+}
+@font-face {
+  font-family: 'ttm-extra-light';
+  src: url('udxmod://udx/font/ttm-extra-light.ttf');
+}
+@font-face {
+  font-family: 'ttm-extra-light-italic';
+  src: url('udxmod://udx/font/ttm-extra-light-italic.ttf');
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  -webkit-text-size-adjust: none;
+}
+mark {
+  background-color: transparent;
+  color: inherit;
+}
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input,
+select,
+textarea {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
+  --color-light: #ffffff;
+  --color-light-rgba: 255, 255, 255;
+  --color-grey: #d9dfde;
+  --color-grey-rgba: 217, 223, 222;
+  --color-grey-alt: #d0d4d3;
+  --color-grey-alt-rgba: 208, 212, 211;
+  --color-grey-darker: #929796;
+  --color-grey-darker-rgba: 146, 151, 150;
+  --color-ultra-dark: #141414;
+  --color-ultra-dark-rgba: 20, 20, 20;
+  --color-space-dark: #1c1c1c;
+  --color-space-dark-rgba: 28, 28, 28;
+  --color-dark: #212121;
+  --color-dark-rgba: 33, 33, 33;
+  --color-dark-alt: #292929;
+  --color-dark-alt-rgba: 41, 41, 41;
+  --color-dark-special: #303030;
+  --color-dark-special-rgba: 48, 48, 48;
+  --color-error: #cd4244;
+  --color-error-rgba: 205, 66, 68;
+  --color-warning: #da8d23;
+  --color-warning-rgba: 218, 141, 35;
+  --color-success: #00cb7b;
+  --color-success-rgba: 0, 203, 123;
+  --color-tone-primary: #f64941;
+  --color-tone-primary-rgba: 244, 67, 54;
+  --font-black: 'ttm-black';
+  --font-black-italic: 'ttm-black-italic';
+  --font-bold: 'ttm-bold';
+  --font-bold-italic: 'ttm-bold-italic';
+  --font-demibold: 'ttm-demibold';
+  --font-demibold-italic: 'ttm-demibold-italic';
+  --font-extra-light: 'ttm-extra-light';
+  --font-extra-light-italic: 'ttm-extra-light-italic';
+  --font-light: 'ttm-light';
+  --font-light-italic: 'ttm-light-italic';
+  --font-medium: 'ttm-medium';
+  --font-medium-italic: 'ttm-medium-italic';
+  --font-regular: 'ttm-regular';
+  --font-regular-italic: 'ttm-regular-italic';
+  --font-thin: 'ttm-thin';
+  --font-thin-italic: 'ttm-thin-italic';
+  --transition-fast: cubic-bezier(0.09, 1.01, 0.82, 1);
+  --transition-ease: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --global-spacing: 8px;
+  --letter-spacing: 0.078rem;
+  --svg-stroke-thin: 0.75;
+  --svg-stroke-normal: 1.35;
+  --svg-stroke-medium: 1.8;
+  --svg-stroke-large: 2.15;
+  --font-size-xxxs: 0.625rem;
+  --font-size-xxs: 0.725rem;
+  --font-size-xs: 0.813rem;
+  --font-size-s: 0.875rem;
+  --font-size-normal: 1rem;
+  --font-size-m: 1.125rem;
+  --font-size-l: 1.25rem;
+  --font-size-xl: 1.375rem;
+  --font-size-xxl: 1.5rem;
+  --font-size-xxxl: 1.625rem;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-size: 16px;
+  color: var(--color-grey);
+  font-family: var(--font-regular);
+}
+
+/* App : Control Container Inner Overflow */
+.container-inner-o,
+#app-charger .app {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+}
+
+.container-inner-o.relative,
+#app-charger .app.relative {
+  position: relative;
+}
+
+.container-inner-o.rtl,
+#app-charger .app.rtl {
+  direction: rtl;
+}
+
+.container-inner-o.rtl > *,
+#app-charger .app.rtl > * {
+  direction: ltr;
+}
+
+.container-inner-o.scrollbar-visible,
+#app-charger .app.scrollbar-visible {
+  width: calc(100% - 2px);
+  padding-right: 8px;
+}
+
+.container-inner-o.scrollbar-visible::-webkit-scrollbar,
+#app-charger .app.scrollbar-visible::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.container-inner-o.scrollbar-visible::-webkit-scrollbar-track,
+#app-charger .app.scrollbar-visible::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 50em;
+}
+
+.container-inner-o.scrollbar-visible::-webkit-scrollbar-track-piece:start,
+#app-charger .app.scrollbar-visible::-webkit-scrollbar-track-piece:start {
+  background: var(--scrollbar-track-bg);
+  margin-top: var(--global-spacing);
+  border-radius: 50em;
+}
+
+.container-inner-o.scrollbar-visible::-webkit-scrollbar-track-piece:end,
+#app-charger .app.scrollbar-visible::-webkit-scrollbar-track-piece:end {
+  background: var(--scrollbar-track-bg);
+  margin-bottom: var(--global-spacing);
+  border-radius: 50em;
+}
+
+.container-inner-o.scrollbar-visible::-webkit-scrollbar-thumb,
+#app-charger .app.scrollbar-visible::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb-bg);
+  border-radius: 50em;
+}
+
+.container-inner-o.scrollbar-hidden::-webkit-scrollbar,
+#app-charger .app.scrollbar-hidden::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.container-inner-o.scroll-horizontal,
+#app-charger .app.scroll-horizontal {
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.container-inner-o.scroll-vertical,
+#app-charger .app.scroll-vertical {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.container-inner-o.scroll-horizontal-vertical,
+#app-charger .app.scroll-horizontal-vertical {
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
+
+/* Element visibility */
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.15s ease, visibility 0.15s ease;
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.15s ease, visibility 0.15s ease;
+}
